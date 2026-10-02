@@ -1,0 +1,20 @@
+```{r}
+library(readr)
+library(dplyr)
+data <- read_delim("final_eval.csv", escape_double = FALSE, trim_ws = TRUE)
+library("irr")
+data_calc <- data[, 4:6]
+print(kappam.fleiss(data_calc))
+
+data_sum <- data[c('SecI', 'Sum')]
+result <- data_sum %>%
+  mutate(sum_check = ifelse(Sum > 1, 1, 0)) %>%
+  group_by(SecI) %>%
+  summarise(sum_final = sum(sum_check)) %>%
+  filter(sum_final >= 2) %>%
+  pull(SecI)
+
+write.table(result, file = "final_relevant_security_indicators.txt", col.names = FALSE, row.names = FALSE)
+````
+
+

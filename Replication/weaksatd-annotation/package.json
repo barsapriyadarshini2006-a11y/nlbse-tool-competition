@@ -1,0 +1,23 @@
+{
+  "name": "vulsatdds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "annotateForVulnerabilities": "node src/annotateCSV.js",
+    "mineProjects": "node src/mineProjects.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-csv": "^2.1.3",
+    "cli-progress": "^3.12.0",
+    "fast-csv": "^4.3.6",
+    "jszip": "^3.10.1",
+    "node-fetch": "^3.2.10",
+    "read-excel-file": "^5.5.3",
+    "write-excel-file": "^1.4.19",
+    "xml2js": "^0.4.23"
+  }
+}
