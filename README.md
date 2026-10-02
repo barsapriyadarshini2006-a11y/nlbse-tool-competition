@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # MADE-WIC: Multiple Annotated Datasets for Exploring Weaknesses In Code and Replication Package
 
@@ -8,3 +9,6 @@ This package contains the MADE-WIC dataset and the code used to build it. It is 
 
 # nlbse-tool-competition
  c1fb7349513b5a8d9c36f85092673a43e1285794
+=======
+# nlbse-tool-competition
+>>>>>>> c1fb7349513b5a8d9c36f85092673a43e1285794
